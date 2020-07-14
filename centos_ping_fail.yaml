@@ -20,7 +20,10 @@
                  -----------
                  Job ID: {{ tower_job_id }}
                  Job Name: {{ tower_job_template_name }}
-                 Run User: {{ tower_user_first_name }}
+                 Job Workflow ID: {{ tower_workflow_job_id }}
+                 Job Workflow Name: {{ tower_workflow_job_name }}
+                 Run User: {{ tower_user_name }}
+                 
                  
             Regards,
             Subani Prasad
