@@ -11,8 +11,13 @@
       subject: Centos_Ping Job Notification
       body: |
           Hello Team, High Alert !
+          
                Centos Ping Job Failed on {{ ansible_hostname }}.
-               Please Verify the logs to identify the issue. Take necessary actions immediately
+               
+               Please Verify the logs to identify the issue. Take necessary actions immediately.
+               
+               {{ job_friendly_name }} #{{ job.id }} '{{ job.name }}' {{ job.status }}: {{ url }}
+               
           Regards,
           Subani Prasad
     delegate_to: localhost
