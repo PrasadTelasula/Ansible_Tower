@@ -1,5 +1,5 @@
 ---
-- hosts: tag_Name_CentosNode
+- hosts: tag_Name_CentosNod
   gather_facts: yes
   
   tasks:
