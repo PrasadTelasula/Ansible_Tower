@@ -9,13 +9,10 @@
       password: xcqozuljcaqticwh
       to: Prasad Telasula<prasad.telasula@yahoo.com>
       subject: Formac Ansible Tower Centos_Ping Job Notification
-      body: |
-               Hello Team, High Alert !
-          
-               Centos Ping Job Failed on {{ ansible_hostname }}.
-               
-               Please Verify the logs to identify the issue. Take necessary actions immediately.
-               
+      body: | 
+            Hello Team, High Alert !
+                 Centos Ping Job Failed on {{ ansible_hostname }}.
+                 Please Verify the logs to identify the issue. Take necessary actions immediately.
           Regards,
           Subani Prasad
     delegate_to: localhost
