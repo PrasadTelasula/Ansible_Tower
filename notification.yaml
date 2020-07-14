@@ -1,2 +1,13 @@
 ---
-- 
+- hosts: localhost
+  tasks:
+  - name: Sending an e-mail using Gmail SMTP servers
+    mail:
+      host: smtp.gmail.com
+      port: 587
+      username: subani.prasad@gmail.com
+      password: xcqozuljcaqticwh
+      to: Prasad Telasula<prasad.telasula@yahoo.com>
+      subject: Ping_All_Servers Job Notification
+      body: Ping_All_Servers Job Successfully executed on {{ ansible_hostname }} .
+    delegate_to: localhost
