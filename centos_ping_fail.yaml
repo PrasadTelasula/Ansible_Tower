@@ -8,7 +8,7 @@
       username: subani.prasad@gmail.com
       password: xcqozuljcaqticwh
       to: Prasad Telasula<prasad.telasula@yahoo.com>
-      subject: Formac Ansible Tower | '{{ job.name }}' Centos_Ping Job Notification
+      subject: Formac Ansible Tower | {{ tower_job_id }} Centos_Ping Job Notification
       body: |
             Hello Team, High Alert !
 
