@@ -20,7 +20,7 @@
                  -----------
                  Workflow ID: {{ tower_workflow_job_id }}
                  Workflow Name: {{ tower_workflow_job_name }}
-                 Job ID: {{ tower_job_id }}
+                 Job ID: {{ tower_job_template_id }}
                  Job Name: {{ tower_job_template_name }}
                  Inventory ID: {{ tower_inventory_id }}
                  Inventory Name: {{ tower_inventory_name }}
