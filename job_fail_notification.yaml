@@ -18,6 +18,7 @@
                  
                  Job Details:
                  -----------
+                 Project Name: {{ tower_project_name }}
                  Workflow ID: {{ tower_workflow_job_id }}
                  Workflow Name: {{ tower_workflow_job_name }}
                  Job ID: {{ tower_job_template_id }}
