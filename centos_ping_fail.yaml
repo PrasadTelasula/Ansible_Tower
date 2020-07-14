@@ -8,14 +8,20 @@
       username: subani.prasad@gmail.com
       password: xcqozuljcaqticwh
       to: Prasad Telasula<prasad.telasula@yahoo.com>
-      subject: Formac Ansible Tower | {{ tower_job_id }} Centos_Ping Job Notification
+      subject: Formac Ansible Tower | {{ tower_job_id }} - {{ tower_job_template_name }} Job Notification !
       body: |
             Hello Team, High Alert !
 
-                 Centos Ping Job Failed on {{ ansible_hostname }}.
+                 {{ tower_job_template_name }} failed at {{ ansible_date_time.iso8601 }}.
 
                  Please Verify the logs to identify the issue. Take necessary actions immediately.
-
+                 
+                 Job Details:
+                 -----------
+                 Job ID: {{ tower_job_id }}
+                 Job Name: {{ tower_job_template_name }}
+                 Run User: {{ tower_user_first_name }}
+                 
             Regards,
             Subani Prasad
     delegate_to: localhost
