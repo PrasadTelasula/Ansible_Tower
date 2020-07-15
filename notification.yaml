@@ -1,13 +1,27 @@
+
+
 ---
 - hosts: localhost
   tasks:
   - name: Sending an e-mail using Gmail SMTP servers
     mail:
-      host: smtp.gmail.com
-      port: 587
-      username: subani.prasad@gmail.com
-      password: xcqozuljcaqticwh
+      host: {{ smtp_email }}
+      port: {{ smtp_port }}
+      username: {{ smtp_user }}
+      password: {{ smtp_password }} 
       to: Prasad Telasula<prasad.telasula@yahoo.com>
-      subject: Ping_All_Servers Job Notification
-      body: Ping_All_Servers Job Successfully executed on {{ ansible_hostname }} .
+      subject: Formac Ansible Tower | {{ tower_job_id }} - {{ tower_job_template_name }} Job Notification !
+      body: |
+            Hello Team, High Alert !
+                 {{ tower_job_template_name }} Successfully at {{ ansible_date_time.iso8601 }}.
+                 
+                 Job Details:
+                 -----------
+                 Workflow ID: {{ tower_workflow_job_id }}
+                 Workflow Name: {{ tower_workflow_job_name }}
+                 Run User: {{ tower_user_name }}
+                 
+                 
+            Regards,
+            Subani Prasad
     delegate_to: localhost
