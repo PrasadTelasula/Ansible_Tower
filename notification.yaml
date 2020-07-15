@@ -12,7 +12,8 @@
       to: Prasad Telasula<prasad.telasula@yahoo.com>
       subject: Formac Ansible Tower | {{ tower_job_id }} - {{ tower_job_template_name }} Job Notification !
       body: |
-            Hello Team, High Alert !
+            Hai Team, 
+            
                  {{ tower_job_template_name }} Successfully at {{ ansible_date_time.iso8601 }}.
                  
                  Job Details:
