@@ -18,8 +18,8 @@
                  
                  Job Details:
                  -----------
-                 Workflow ID: {{ tower_workflow_job_id }}
-                 Workflow Name: {{ tower_workflow_job_name }}
+                 Workflow ID: {{ tower_job_id }}
+                 Workflow Name: {{ tower_job_template_name }}
                  Run User: {{ tower_user_name }}
                  
                  
