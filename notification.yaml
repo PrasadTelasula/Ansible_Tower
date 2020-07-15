@@ -5,10 +5,10 @@
   tasks:
   - name: Sending an e-mail using Gmail SMTP servers
     mail:
-      host: {{ smtp_email }}
-      port: {{ smtp_port }}
-      username: {{ smtp_user }}
-      password: {{ smtp_password }} 
+      host: "{{ smtp_email }}"
+      port: "{{ smtp_port }}"
+      username: "{{ smtp_user }}"
+      password: "{{ smtp_password }}"
       to: Prasad Telasula<prasad.telasula@yahoo.com>
       subject: Formac Ansible Tower | {{ tower_job_id }} - {{ tower_job_template_name }} Job Notification !
       body: |
