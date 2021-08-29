@@ -1,0 +1,12 @@
+---
+- hosts: tag_Name_ApacheDemoCentosNode
+  become: true
+  gather_facts: yes
+
+
+  tasks:
+
+  - name: Install epel repo
+    yum:
+       name: epel
+       state: latest
