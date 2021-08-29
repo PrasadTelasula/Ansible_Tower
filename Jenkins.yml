@@ -6,11 +6,6 @@
 
   tasks:
 
-  - name: Install Java latest
-    yum:
-       name: java
-       state: latest
-
   - name: Create Jenkins Repo
     get_url: 
        url: https://pkg.jenkins.io/redhat/jenkins.repo
