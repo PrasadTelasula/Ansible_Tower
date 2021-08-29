@@ -9,5 +9,5 @@ hostnames:
 keyed_groups:
 - prefix: tag
   key: tags
-compose:
-  ansible_host: private_ip_address
+#compose:
+#  ansible_host: private_ip_address
